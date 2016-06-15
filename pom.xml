@@ -127,13 +127,13 @@
 					            <configuration>
 					                <glue>steps</glue>
 					                <outputDirectory>${project.build.directory}/generated-test-sources/cucumber</outputDirectory>
-					                <featuresDirectory>src/test/resources</featuresDirectory>
+					                <featuresDirectory>src/test/resources/features</featuresDirectory>
 					                <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
 					                <format>json</format>
 					                <strict>true</strict>
 					                <monochrome>true</monochrome>
 					                <tags>"@parallel"</tags>					                
-					                <filterFeaturesByTags>false</filterFeaturesByTags>
+					                <filterFeaturesByTags>true</filterFeaturesByTags>
 					                <!-- <namingPattern>Parallel{c}IT</namingPattern> -->
 					            </configuration>
 					        </execution>
